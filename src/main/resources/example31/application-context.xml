@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.2.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.luxoft.springioc.example31"/>
+    <bean id="employeeService" class="com.luxoft.springioc.example31.EmployeeService"/>
+    <bean id="writeEmployeeToDB" class="com.luxoft.springioc.example31.WriteEmployeeToDB"/>
+    <bean id="writeEmployeeToDB2" class="com.luxoft.springioc.example31.WriteEmployeeToDB2"/>
+
+</beans>

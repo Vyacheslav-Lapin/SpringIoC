@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="fileMovieFinder" class="com.luxoft.springioc.movies.FileMovieFinder" p:fileName="movies.txt"/>
+    <bean id="movieLister" class="com.luxoft.springioc.movies.MovieLister" p:finder-ref="fileMovieFinder"/>
+    <bean id="comedyFileMovieFinder" class="com.luxoft.springioc.movies.FileMovieFinder" p:fileName="comedy-movies.txt"/>
+    <bean id="ex1TestBean" class="com.luxoft.springioc.example01.Ex1TestBean" p:name="testBean"/>
+</beans>
